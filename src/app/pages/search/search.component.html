@@ -1,0 +1,6 @@
+<h1 class="mt-10">Movies List</h1>
+<div class="row" *ngIf="searchedMovies.length > 0">
+  <div class="row">
+ <app-moviesPosterGrid [movies]="searchedMovies"></app-moviesPosterGrid>
+</div>
+</div>

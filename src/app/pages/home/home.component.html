@@ -1,0 +1,13 @@
+<h1>Billboard</h1>
+<div class="row" *ngIf="movies.length > 0">
+   <div class="row">
+     <app-slideShow [movies]="movies"></app-slideShow>
+   </div>
+</div>
+
+<h1 class="mt-10">Movies List</h1>
+<div class="row" *ngIf="movies.length > 0">
+  <div class="row">
+ <app-moviesPosterGrid [movies]="moviesPosterGrid"></app-moviesPosterGrid>
+</div>
+</div>

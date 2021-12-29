@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/home">Movies</a>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+      </ul>
+      <div class="d-flex">
+        <input #txtSearchMovie class="form-control me-2" type="search" placeholder="Search Movie" aria-label="Search" (keyup.enter)="searchMovie(txtSearchMovie.value)">
+        <button class="btn btn-outline-success" (click)="searchMovie(txtSearchMovie.value)">Search</button>
+      </div>
+    </div>
+  </div>
+</nav>
